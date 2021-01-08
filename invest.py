@@ -1,51 +1,3 @@
-# -------------------------------------------------
-"""Academic Honesty Statement.
-
-Author: Ted Woodsides
-Email: ktw51962@uga.edu
-Semester: Fall
-Year: 2020
-
-Statement of Academic Honesty:
-    The following code represents my own work. I have neither received nor
-    given inappropriate assistance. I have not copied or modified code from any
-    source other than the course materials or the course textbook. I recognize
-    that any unauthorized assistance or plagiarism will be handled in
-    accordance with the University of Georgia's Academic Honesty Policy and the
-    policies of this course.
-"""
-# ------------------------------------------------------------#
-
-
-def submission_info():
-    """Return a dictionary with some project submission information.
-
-    Returns:
-        A dictionary with some information about this submission.
-
-    Examples:
-        Here is an example that shows the values in the starter code.
-
-            >>> import invest
-            >>> import pprint
-            >>> pprint.pprint(invest.submission_info())
-            {'author': 'Student Name',
-             'email': 'sn12345@uga.edu',
-             'semester': 'Fall',
-             'year': 2020}
-
-    See Also:
-        :py:func:`test_invest.TestInvestSubmissionInfo`
-    """
-    # replace with your values
-    return dict(author='Ted Woodsides',    # author name
-                email='ktw51962@uga.edu',  # unaliased UGA email
-                semester='Fall',          # academic semester
-                year=2020)                # academic year
-
-# -----------------------------------------------------------#
-
-
 def banner(title, border='*'):
     """Print a banner with a title.
 
@@ -324,11 +276,3 @@ def main():
         calcrepeat = askManyTwo("Calculate another investment? ", convert, 3, "no")
     print("")
     banner("bye!", "+")
-
-
-# --------------------------------------------------------------------------- #
-# DO NOT MODIFY THE IF STATEMENT BELOW. MAKE SURE IT'S AFTER EVERYTHING ELSE.
-# If this module is running in the main scope, then call `main()`
-# https://docs.python.org/3/library/__main__.html
-if __name__ == "__main__":
-    main()
